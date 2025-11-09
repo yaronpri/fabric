@@ -3,7 +3,7 @@
   "version": "4.0",
   "datasetReference": {
     "byPath": {
-      "path": "../Contoso Sales_1.SemanticModel"
+      "path": "../Contoso Sales.SemanticModel"
     }
   }
 }
