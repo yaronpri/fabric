@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.1.0/schema.json",
+  "metadata": {
+    "type": "Notebook",
+    "displayName": "Notebook 8",
+    "description": "A notebook description",
+    "sensitivityLabelId": "00000000-0000-0000-0000-000000000000"
+  },
+  "config": {
+    "version": "2.1",
+    "logicalId": "5c038c4e-05b7-8d2f-417d-8f00bc2c5b41"
+  }
+}
