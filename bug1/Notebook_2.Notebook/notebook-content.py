@@ -1,4 +1,4 @@
-# Fabric notebook source - dikla and yaron
+# Fabric notebook source dikla and yaron
 
 # METADATA ********************
 
