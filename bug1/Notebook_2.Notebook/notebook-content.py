@@ -1,4 +1,4 @@
-# Fabric notebook source dikla and yaron
+# Fabric notebook source
 
 # METADATA ********************
 
@@ -14,7 +14,7 @@
 # Welcome to your new notebook
 # Type here in the cell editor to add code!
 
-
+print(1)
 # METADATA ********************
 
 # META {
