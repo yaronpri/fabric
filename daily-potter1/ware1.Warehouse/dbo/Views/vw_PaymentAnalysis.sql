@@ -3,7 +3,7 @@ Description:    This script creates NYTaxi views and stored procedures (2024 dat
 **************************************************************************************/
 
 /***************************************************************
-Create a view to find the preferred method of payment and associated amount processed in 2024 year
+Create a view to find the preferred method of payment and associated amount processed in 2025 year
 *****************************************************************/
 
 CREATE VIEW [dbo].[vw_PaymentAnalysis] AS
@@ -17,5 +17,6 @@ JOIN dbo.[Date] AS D
 WHERE YEAR(D.[Date])=2024
 GROUP BY    
     PaymentType
+
 
 GO
