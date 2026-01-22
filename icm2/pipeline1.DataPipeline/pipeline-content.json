@@ -1,0 +1,33 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "name": "Stored procedure1",
+        "type": "SqlServerStoredProcedure",
+        "dependsOn": [],
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureOutput": false,
+          "secureInput": false
+        },
+        "typeProperties": {
+          "storedProcedureName": "[dbo].[usp_GetTopProductsByCategory]"
+        },
+        "linkedService": {
+          "name": "extenalWH",
+          "properties": {
+            "annotations": [],
+            "type": "DataWarehouse",
+            "typeProperties": {
+              "endpoint": "sh5cwjwcnq4ejauskwqosxmajy-txhvnscv5drurpiuwibk4kdl4m.datawarehouse.fabric.microsoft.com",
+              "artifactId": "baf4f03c-7230-416e-9479-680b17ea3f1d",
+              "workspaceId": "c856cf9d-e855-48e3-bd14-b202ae286be3"
+            }
+          }
+        }
+      }
+    ]
+  }
+}
