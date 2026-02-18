@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Contoso Sales"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "32cc271f-6779-a85a-4553-e1c421c9ddc1"
+  }
+}
