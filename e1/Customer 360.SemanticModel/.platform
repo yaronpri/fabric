@@ -2,7 +2,8 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
   "metadata": {
     "type": "SemanticModel",
-    "displayName": "Customer 360"
+    "displayName": "Customer 360",
+    "description": "The Customer 360 semantic model appears to be a placeholder or minimal structure intended for capturing customer-related metrics or identifiers. It currently contains a single numeric field, suggesting it is an early-stage or test model rather than a fully featured customer analytics dataset."
   },
   "config": {
     "version": "2.0",
