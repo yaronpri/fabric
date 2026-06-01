@@ -6,6 +6,12 @@
       "note": "",
       "type": "Integer",
       "value": 1
+    },
+    {
+      "name": "dikla",
+      "note": "",
+      "type": "Integer",
+      "value": 2
     }
   ]
 }
