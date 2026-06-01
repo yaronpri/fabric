@@ -2,7 +2,7 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/variableLibrary/definition/variables/1.0.0/schema.json",
   "variables": [
     {
-      "name": "sdsd",
+      "name": "sds",
       "note": "",
       "type": "Integer",
       "value": 1
