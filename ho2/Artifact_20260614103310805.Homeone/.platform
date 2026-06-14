@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.1.0/schema.json",
   "metadata": {
     "type": "Homeone",
-    "displayName": "Artifact_20260614102132640",
-    "description": "This is an artifact created at Sun, 14 Jun 2026 10:21:32 GMT",
+    "displayName": "Artifact_20260614103310805",
+    "description": "This is an artifact created at Sun, 14 Jun 2026 10:33:10 GMT",
     "sensitivityLabelId": "00000000-0000-0000-0000-000000000000"
   },
   "config": {
     "version": "2.1",
-    "logicalId": "f31c449b-bdeb-ab34-4841-d0e2af80e068"
+    "logicalId": "e6b31dd8-703f-8683-4a07-d12923fd656f"
   }
 }
