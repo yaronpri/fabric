@@ -3,11 +3,10 @@
   "metadata": {
     "type": "Notebook",
     "displayName": "Notebook 42",
-    "description": "A notebook description",
-    "sensitivityLabelId": "00000000-0000-0000-0000-000000000000"
+    "description": "A notebook description"
   },
   "config": {
     "version": "2.1",
-    "logicalId": "db1f7bf0-3983-9c7c-4365-7b023fe444b2"
+    "logicalId": "18db73d7-fd04-65cd-0a01-60967bb9c962"
   }
 }
