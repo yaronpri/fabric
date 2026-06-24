@@ -1,0 +1,44 @@
+{
+  "visualType": "card",
+  "query": {
+    "queryState": {
+      "Values": {
+        "projections": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Table (2)"
+                  }
+                },
+                "Property": "sum"
+              }
+            },
+            "queryRef": "Table (2).sum",
+            "nativeQueryRef": "sum"
+          }
+        ]
+      }
+    },
+    "sortDefinition": {
+      "sort": [
+        {
+          "field": {
+            "Measure": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Table (2)"
+                }
+              },
+              "Property": "sum"
+            }
+          },
+          "direction": "Descending"
+        }
+      ],
+      "isDefaultSort": true
+    }
+  },
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualConfiguration/2.6.0/schema.json"
+}

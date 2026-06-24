@@ -10,7 +10,7 @@ annotation PBI_QueryOrder = ["Table","Table (2)"]
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBIDesktopVersion = 2.144.655.0 (25.06)+114ed9e0eb4b96aa01002b329ec03e276ce380b1
+annotation PBI_ProTooling = ["WebModelingEdit","CopilotTooling"]
 
 ref table Table
 ref table 'Table (2)'
