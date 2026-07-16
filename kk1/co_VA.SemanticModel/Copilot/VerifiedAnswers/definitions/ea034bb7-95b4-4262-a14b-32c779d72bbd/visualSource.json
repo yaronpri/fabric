@@ -1,0 +1,31 @@
+{
+  "visualType": "clusteredColumnChart",
+  "query": {
+    "queryState": {
+      "Y": {
+        "projections": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "Table"
+                      }
+                    },
+                    "Property": "Column1"
+                  }
+                },
+                "Function": 0
+              }
+            },
+            "queryRef": "Sum(Table.Column1)",
+            "nativeQueryRef": "Sum of Column1"
+          }
+        ]
+      }
+    }
+  },
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualConfiguration/2.5.0/schema.json"
+}
