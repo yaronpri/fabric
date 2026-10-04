@@ -1,0 +1,14 @@
+expression 'Query Size Limit' = "100" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 0e399e1d-d46b-439b-86e7-33cada80e8f4
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+
+expression 'Product Color' = "Red or Black" meta [IsParameterQuery=true, List={"Red or Black", "All"}, DefaultValue="Red or Black", Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 231b9176-8e5a-4dc6-b86b-6677ab822285
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+

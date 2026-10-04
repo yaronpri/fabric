@@ -1,0 +1,128 @@
+table DimGeography
+	lineageTag: e91278c5-0c10-43d9-85d7-1eb7e1eb644f
+
+	column GeographyKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 6bd4fb77-891a-464b-a8d1-8f6fee9ac5d0
+		summarizeBy: none
+		sourceColumn: GeographyKey
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="NumberWhole" Accuracy="0" />
+
+	column City
+		dataType: string
+		lineageTag: b44046c1-e5cb-4fdc-99c7-2a9b04fb032c
+		summarizeBy: none
+		sourceColumn: City
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+	column StateProvinceCode
+		dataType: string
+		lineageTag: 66ea801a-62e2-412f-ac27-4b07448f6963
+		summarizeBy: none
+		sourceColumn: StateProvinceCode
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+	column StateProvinceName
+		dataType: string
+		lineageTag: 98ab586b-25ec-4e6a-8a70-6f0046fda2b0
+		summarizeBy: none
+		sourceColumn: StateProvinceName
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+	column CountryRegionCode
+		dataType: string
+		lineageTag: dcc37ea6-06b3-44d3-abac-e2a3ec9ad635
+		summarizeBy: none
+		sourceColumn: CountryRegionCode
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+	column EnglishCountryRegionName
+		dataType: string
+		lineageTag: 8bf27719-82c7-4e03-95e0-58973ee932f3
+		summarizeBy: none
+		sourceColumn: EnglishCountryRegionName
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+	column SpanishCountryRegionName
+		dataType: string
+		lineageTag: 101b0760-b2e3-4066-adcd-781274661fc4
+		summarizeBy: none
+		sourceColumn: SpanishCountryRegionName
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+	column FrenchCountryRegionName
+		dataType: string
+		lineageTag: 368b8e82-c4cb-466d-be34-8f794d83d671
+		summarizeBy: none
+		sourceColumn: FrenchCountryRegionName
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+	column PostalCode
+		dataType: string
+		lineageTag: efd6b8f1-71f4-4fd4-9b80-4e34b662fc08
+		summarizeBy: none
+		sourceColumn: PostalCode
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+	column SalesTerritoryKey
+		dataType: int64
+		formatString: 0
+		lineageTag: ef3b8a68-07a9-47bd-b895-80d157c09c9e
+		summarizeBy: none
+		sourceColumn: SalesTerritoryKey
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="NumberWhole" Accuracy="0" />
+
+	column IpAddressLocator
+		dataType: string
+		lineageTag: 65ae0990-cf49-4f66-9714-d037ed5e4959
+		summarizeBy: none
+		sourceColumn: IpAddressLocator
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+	partition DimGeography-0c62eb43-232f-45bf-a585-c122f54e0964 = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("jxkt4xphz2.database.windows.net", "AdventureWorksDW2016-Australia"),
+				    dbo_DimGeography = Source{[Schema="dbo",Item="DimGeography"]}[Data]
+				in
+				    dbo_DimGeography
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Sales analysis drilldownV3"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "71644bb2-9ee6-9a13-457d-c50153d9e27f"
+  }
+}

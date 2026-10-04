@@ -1,0 +1,30 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/variableLibrary/definition/valueSet/1.0.0/schema.json",
+  "name": "qqqq",
+  "variableOverrides": [
+    {
+      "name": "date",
+      "value": "2026-09-15T09:18:00Z"
+    },
+    {
+      "name": "bool",
+      "value": false
+    },
+    {
+      "name": "int",
+      "value": 213212333333
+    },
+    {
+      "name": "guid",
+      "value": "333221b0-5a70-4a81-9b9d-a8e3fb502f6a"
+    },
+    {
+      "name": "num",
+      "value": 4444444444444444
+    },
+    {
+      "name": "string",
+      "value": "asdsadad das dsa3213 ds da"
+    }
+  ]
+}

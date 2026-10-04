@@ -1,0 +1,80 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "type": "Lookup",
+        "typeProperties": {
+          "source": {
+            "type": "LakehouseTableSource"
+          },
+          "datasetSettings": {
+            "type": "LakehouseTable",
+            "typeProperties": {
+              "schema": "dbo",
+              "table": "publicholidays"
+            },
+            "schema": [],
+            "linkedService": {
+              "name": "lh1",
+              "properties": {
+                "type": "Lakehouse",
+                "typeProperties": {
+                  "artifactId": "8a237001-814c-9b9d-4d3c-9ab1e3b5d2ee",
+                  "workspaceId": "00000000-0000-0000-0000-000000000000",
+                  "rootFolder": "Tables"
+                },
+                "annotations": []
+              }
+            },
+            "annotations": []
+          },
+          "firstRowOnly": {
+            "value": "@pipeline().libraryVariables.Variables_1_bool",
+            "type": "Expression"
+          }
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "Lookup1",
+        "dependsOn": []
+      }
+    ],
+    "libraryVariables": {
+      "Variables_1_bool": {
+        "type": "Bool",
+        "variableName": "bool",
+        "libraryName": "Variables_1"
+      },
+      "Variables_1_date": {
+        "type": "String",
+        "variableName": "date",
+        "libraryName": "Variables_1"
+      },
+      "Variables_1_guid": {
+        "type": "String",
+        "variableName": "guid",
+        "libraryName": "Variables_1"
+      },
+      "Variables_1_int": {
+        "type": "Int",
+        "variableName": "int",
+        "libraryName": "Variables_1"
+      },
+      "Variables_1_num": {
+        "type": "Float",
+        "variableName": "num",
+        "libraryName": "Variables_1"
+      },
+      "Variables_1_string": {
+        "type": "String",
+        "variableName": "string",
+        "libraryName": "Variables_1"
+      }
+    }
+  }
+}
