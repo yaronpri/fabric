@@ -1,0 +1,389 @@
+table DimProduct
+	lineageTag: 7d70d974-3963-4904-9cc9-b3bb41d86032
+
+	column ProductKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 00efd024-f15d-4a7f-9bf0-3c2af2ea5e08
+		summarizeBy: none
+		sourceColumn: ProductKey
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="NumberWhole" Accuracy="0" />
+
+	column ProductAlternateKey
+		dataType: string
+		lineageTag: e6523953-c046-435f-9d24-b577c3e69f88
+		summarizeBy: none
+		sourceColumn: ProductAlternateKey
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+	column ProductSubcategoryKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 1f2d8387-d85c-46c2-ab40-a07062164780
+		summarizeBy: count
+		sourceColumn: ProductSubcategoryKey
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="NumberWhole" Accuracy="0" />
+
+	column WeightUnitMeasureCode
+		dataType: string
+		lineageTag: 7b2649b7-d725-46e6-9504-454e0a6ec6ea
+		summarizeBy: none
+		sourceColumn: WeightUnitMeasureCode
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+	column SizeUnitMeasureCode
+		dataType: string
+		lineageTag: e5216573-264a-4f73-9e47-dff1af29e239
+		summarizeBy: none
+		sourceColumn: SizeUnitMeasureCode
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+	column EnglishProductName
+		dataType: string
+		lineageTag: 5f6232fc-fdbf-4736-8808-38b012f05620
+		summarizeBy: none
+		sourceColumn: EnglishProductName
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+	column SpanishProductName
+		dataType: string
+		lineageTag: cda37be0-b374-41ac-9eb2-9902cf60bdb2
+		summarizeBy: none
+		sourceColumn: SpanishProductName
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+	column FrenchProductName
+		dataType: string
+		lineageTag: e15f642d-e0c8-4b0e-a0e6-357dc853cc1d
+		summarizeBy: none
+		sourceColumn: FrenchProductName
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+	column StandardCost
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: fc35130a-8659-4ad7-9174-f50626dceb13
+		summarizeBy: sum
+		sourceColumn: StandardCost
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="CurrencyGeneral" ThousandSeparator="True"><Currency LCID="1033" DisplayName="$ English (United States)" Symbol="$" PositivePattern="0" NegativePattern="0" /></Format>
+
+	column FinishedGoodsFlag
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 3a7f0022-5904-46ed-818e-b4560f1ecb07
+		summarizeBy: none
+		sourceColumn: FinishedGoodsFlag
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Boolean" />
+
+	column Color
+		dataType: string
+		lineageTag: 8611fd2b-8f9f-4c3e-a0a2-37701286194a
+		summarizeBy: none
+		sourceColumn: Color
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+	column SafetyStockLevel
+		dataType: int64
+		formatString: 0
+		lineageTag: 66520b3e-c073-4e55-aa91-ba0b14e60a09
+		summarizeBy: sum
+		sourceColumn: SafetyStockLevel
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="NumberWhole" Accuracy="0" />
+
+	column ReorderPoint
+		dataType: int64
+		formatString: 0
+		lineageTag: 9da26376-ed6c-4a7b-a9b4-19938ec6b6fb
+		summarizeBy: sum
+		sourceColumn: ReorderPoint
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="NumberWhole" Accuracy="0" />
+
+	column ListPrice
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: e50400c6-cf2d-4533-8440-9332a3ee1ae9
+		summarizeBy: sum
+		sourceColumn: ListPrice
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="CurrencyGeneral" ThousandSeparator="True"><Currency LCID="1033" DisplayName="$ English (United States)" Symbol="$" PositivePattern="0" NegativePattern="0" /></Format>
+
+	column Size
+		dataType: string
+		lineageTag: 7d3f60bd-1ada-464a-b2aa-eaa54985af67
+		summarizeBy: none
+		sourceColumn: Size
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+	column SizeRange
+		dataType: string
+		lineageTag: 90f9c42c-2a3f-400d-a235-88530c99b8be
+		summarizeBy: none
+		sourceColumn: SizeRange
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+	column Weight
+		dataType: double
+		lineageTag: f01c0b3b-feb9-481c-9f80-d06ef22944eb
+		summarizeBy: sum
+		sourceColumn: Weight
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="General" />
+
+	column DaysToManufacture
+		dataType: int64
+		formatString: 0
+		lineageTag: 82dedd48-c42c-45f5-80f0-15d8663f33c6
+		summarizeBy: sum
+		sourceColumn: DaysToManufacture
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="NumberWhole" Accuracy="0" />
+
+	column ProductLine
+		dataType: string
+		lineageTag: 58b1682a-d7c5-4f2e-91de-8319e3eefaef
+		summarizeBy: none
+		sourceColumn: ProductLine
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+	column DealerPrice
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 94191223-286f-40b0-aa81-b1d55b456e04
+		summarizeBy: sum
+		sourceColumn: DealerPrice
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="CurrencyGeneral" ThousandSeparator="True"><Currency LCID="1033" DisplayName="$ English (United States)" Symbol="$" PositivePattern="0" NegativePattern="0" /></Format>
+
+	column Class
+		dataType: string
+		lineageTag: b424674f-b8d5-4e51-ad05-0f204a8b2178
+		summarizeBy: none
+		sourceColumn: Class
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+	column Style
+		dataType: string
+		lineageTag: ba64c03a-9780-4c7f-bb39-07aae838b90c
+		summarizeBy: none
+		sourceColumn: Style
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+	column ModelName
+		dataType: string
+		lineageTag: fcd0af99-f6c7-4fdd-9d58-75939506f03b
+		summarizeBy: none
+		sourceColumn: ModelName
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+	column EnglishDescription
+		dataType: string
+		lineageTag: 2c6f79ca-0b40-4389-b914-9933de6b94f2
+		summarizeBy: none
+		sourceColumn: EnglishDescription
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+	column FrenchDescription
+		dataType: string
+		lineageTag: 9370c495-4fe2-4ae4-93f3-0927b3f29404
+		summarizeBy: none
+		sourceColumn: FrenchDescription
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+	column ChineseDescription
+		dataType: string
+		lineageTag: a099df60-aa3e-49ed-8632-fb46152f2ffc
+		summarizeBy: none
+		sourceColumn: ChineseDescription
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+	column ArabicDescription
+		dataType: string
+		lineageTag: f0506808-6924-43f3-9ca0-7f9d4fedfe00
+		summarizeBy: none
+		sourceColumn: ArabicDescription
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+	column HebrewDescription
+		dataType: string
+		lineageTag: 020777e9-2edf-45eb-9f71-6edde994f087
+		summarizeBy: none
+		sourceColumn: HebrewDescription
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+	column ThaiDescription
+		dataType: string
+		lineageTag: aa3fceef-c16a-41ea-b1e9-050e1995a028
+		summarizeBy: none
+		sourceColumn: ThaiDescription
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+	column GermanDescription
+		dataType: string
+		lineageTag: 41e341e3-41eb-4d9a-ae05-50c5fc676f23
+		summarizeBy: none
+		sourceColumn: GermanDescription
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+	column JapaneseDescription
+		dataType: string
+		lineageTag: 639a3e65-2188-4301-8dc9-7a9a0288fe4d
+		summarizeBy: none
+		sourceColumn: JapaneseDescription
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+	column TurkishDescription
+		dataType: string
+		lineageTag: 1d66d432-ba0c-4f9c-9bae-07dc08432168
+		summarizeBy: none
+		sourceColumn: TurkishDescription
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+	column StartDate
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 908a4b36-a024-4f2b-a1fd-0f05c4b3e368
+		summarizeBy: none
+		sourceColumn: StartDate
+
+		variation Variation
+			isDefault
+			relationship: a971a74e-58c4-4ccd-b97c-af5d9bebc900
+			defaultHierarchy: LocalDateTable_1db11f1b-7c46-44ac-881d-2ada39f03695.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="DateTimeGeneralPattern"><DateTimes><DateTime LCID="1033" Group="GeneralDateTimeLong" FormatString="G" /></DateTimes></Format>
+
+	column EndDate
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 9d7f854b-fd7d-4215-a121-cc3d41299734
+		summarizeBy: none
+		sourceColumn: EndDate
+
+		variation Variation
+			isDefault
+			relationship: 6ab93997-a0e7-462f-a3b9-e7908c3f283e
+			defaultHierarchy: LocalDateTable_ff0d8a9b-66e0-43e6-ba91-27c98afe20c8.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="DateTimeGeneralPattern"><DateTimes><DateTime LCID="1033" Group="GeneralDateTimeLong" FormatString="G" /></DateTimes></Format>
+
+	column Status
+		dataType: string
+		lineageTag: 87143216-2680-4a7a-853b-2404d2636f4b
+		summarizeBy: none
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+	partition DimProduct-ca096d3d-1fb8-4981-bbd4-4277f121d04c = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("jxkt4xphz2.database.windows.net", "AdventureWorksDW2016-Australia"),
+				    dbo_DimProduct = Source{[Schema="dbo",Item="DimProduct"]}[Data],
+				    MyColor = if #"Product Color" = "Red or Black" then Text.Split("Black,Red",",") else Text.Split("Black,Silver,Blue,Grey,Multi,Silver/Black,Red,White,Yellow,NA",","),
+				    #"Filtered Rows" = Table.SelectRows(dbo_DimProduct, each (List.Contains(MyColor,[Color])))
+				in
+				    #"Filtered Rows"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

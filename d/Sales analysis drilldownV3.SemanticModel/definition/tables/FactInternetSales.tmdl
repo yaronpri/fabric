@@ -1,0 +1,321 @@
+table FactInternetSales
+	lineageTag: ce43759a-338a-4627-827f-158f897a1327
+
+	measure 'Fact Table Rows' = COUNT(FactInternetSales[SalesOrderNumber])
+		formatString: 0
+		lineageTag: d4323ac0-0758-4c82-93fd-eda02842a9d6
+
+		annotation Format = <Format Format="NumberWhole" Accuracy="0" />
+
+	column ProductKey
+		dataType: int64
+		formatString: 0
+		lineageTag: a3d5ac62-d649-42c0-b7e6-2036854277eb
+		summarizeBy: none
+		sourceColumn: ProductKey
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="NumberWhole" Accuracy="0" />
+
+	column OrderDateKey
+		dataType: int64
+		formatString: 0
+		lineageTag: bfe66182-c15a-43a4-818b-dd1ffb01671a
+		summarizeBy: count
+		sourceColumn: OrderDateKey
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="NumberWhole" Accuracy="0" />
+
+	column DueDateKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 33ce900c-952f-4c55-ba69-32c9af631b01
+		summarizeBy: none
+		sourceColumn: DueDateKey
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="NumberWhole" Accuracy="0" />
+
+	column ShipDateKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 34a87ae5-fd45-4805-bda8-11252a858418
+		summarizeBy: count
+		sourceColumn: ShipDateKey
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="NumberWhole" Accuracy="0" />
+
+	column CustomerKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 9fef5571-4a14-40aa-84f9-28a8ba22b907
+		summarizeBy: none
+		sourceColumn: CustomerKey
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="NumberWhole" Accuracy="0" />
+
+	column PromotionKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 7a5082e7-df01-4a50-ba4a-d96280b3488c
+		summarizeBy: count
+		sourceColumn: PromotionKey
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="NumberWhole" Accuracy="0" />
+
+	column CurrencyKey
+		dataType: int64
+		formatString: 0
+		lineageTag: ace7b05e-181a-4990-8b1f-61e4b0ecadaa
+		summarizeBy: count
+		sourceColumn: CurrencyKey
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="NumberWhole" Accuracy="0" />
+
+	column SalesTerritoryKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 283f2041-eda4-4027-905d-cf4b1b3472f2
+		summarizeBy: count
+		sourceColumn: SalesTerritoryKey
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="NumberWhole" Accuracy="0" />
+
+	column SalesOrderNumber
+		dataType: string
+		lineageTag: 2fcb3d1e-784c-44be-b8df-122c06ee1387
+		summarizeBy: none
+		sourceColumn: SalesOrderNumber
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+	column SalesOrderLineNumber
+		dataType: int64
+		formatString: 0
+		lineageTag: e43cd458-61f8-4378-8917-86028c92b606
+		summarizeBy: sum
+		sourceColumn: SalesOrderLineNumber
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="NumberWhole" Accuracy="0" />
+
+	column RevisionNumber
+		dataType: int64
+		formatString: 0
+		lineageTag: ba98e310-f5c4-4616-a085-215a5dd1648b
+		summarizeBy: sum
+		sourceColumn: RevisionNumber
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="NumberWhole" Accuracy="0" />
+
+	column OrderQuantity
+		dataType: int64
+		formatString: 0
+		lineageTag: 725bdd3f-6732-43bd-b89d-ea3f481cbaf5
+		summarizeBy: sum
+		sourceColumn: OrderQuantity
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="NumberWhole" Accuracy="0" />
+
+	column UnitPrice
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: a2bbc621-f405-4960-9a29-4858373d22f8
+		summarizeBy: sum
+		sourceColumn: UnitPrice
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="CurrencyGeneral" ThousandSeparator="True"><Currency LCID="1033" DisplayName="$ English (United States)" Symbol="$" PositivePattern="0" NegativePattern="0" /></Format>
+
+	column ExtendedAmount
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: d9d9e184-188c-4515-8ebf-9b32ec334a09
+		summarizeBy: sum
+		sourceColumn: ExtendedAmount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="CurrencyGeneral" ThousandSeparator="True"><Currency LCID="1033" DisplayName="$ English (United States)" Symbol="$" PositivePattern="0" NegativePattern="0" /></Format>
+
+	column UnitPriceDiscountPct
+		dataType: double
+		lineageTag: f4d52278-7f0b-4d7c-bd31-c80c67375601
+		summarizeBy: sum
+		sourceColumn: UnitPriceDiscountPct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="General" />
+
+	column DiscountAmount
+		dataType: double
+		lineageTag: 25c9fef5-eee5-4333-b5b0-466c05f249db
+		summarizeBy: sum
+		sourceColumn: DiscountAmount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="General" />
+
+	column ProductStandardCost
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 285a9015-bc43-4366-b62e-c7a73a028f19
+		summarizeBy: sum
+		sourceColumn: ProductStandardCost
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="CurrencyGeneral" ThousandSeparator="True"><Currency LCID="1033" DisplayName="$ English (United States)" Symbol="$" PositivePattern="0" NegativePattern="0" /></Format>
+
+	column TotalProductCost
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: fe96a1f2-669e-4922-92ec-006d4f6208a4
+		summarizeBy: sum
+		sourceColumn: TotalProductCost
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="CurrencyGeneral" ThousandSeparator="True"><Currency LCID="1033" DisplayName="$ English (United States)" Symbol="$" PositivePattern="0" NegativePattern="0" /></Format>
+
+	column SalesAmount
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 7109cd42-f390-4c9f-8ef5-9d0949c0cbd0
+		summarizeBy: sum
+		sourceColumn: SalesAmount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="CurrencyGeneral" ThousandSeparator="True"><Currency LCID="1033" DisplayName="$ English (United States)" Symbol="$" PositivePattern="0" NegativePattern="0" /></Format>
+
+	column TaxAmt
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 6f2218d5-8570-4ad2-b2a8-f009648211b7
+		summarizeBy: sum
+		sourceColumn: TaxAmt
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="CurrencyGeneral" ThousandSeparator="True"><Currency LCID="1033" DisplayName="$ English (United States)" Symbol="$" PositivePattern="0" NegativePattern="0" /></Format>
+
+	column Freight
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 50a6984d-9283-48c8-bf8f-52d7729bef1f
+		summarizeBy: sum
+		sourceColumn: Freight
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="CurrencyGeneral" ThousandSeparator="True"><Currency LCID="1033" DisplayName="$ English (United States)" Symbol="$" PositivePattern="0" NegativePattern="0" /></Format>
+
+	column CarrierTrackingNumber
+		dataType: string
+		lineageTag: f03b2593-40d6-4805-b3db-0512061e6671
+		summarizeBy: none
+		sourceColumn: CarrierTrackingNumber
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+	column CustomerPONumber
+		dataType: string
+		lineageTag: b872ce9a-38bd-4e2b-bcea-02f86ee69e3d
+		summarizeBy: none
+		sourceColumn: CustomerPONumber
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+	column OrderDate
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 975e47d6-0ad3-4e5e-9fad-611181173041
+		summarizeBy: none
+		sourceColumn: OrderDate
+
+		variation Variation
+			isDefault
+			relationship: 0d9fa48c-e1ea-489d-bb1e-620060b8b3e2
+			defaultHierarchy: LocalDateTable_dbdbac77-5df8-4abd-9b70-211596a6852d.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="DateTimeGeneralPattern"><DateTimes><DateTime LCID="1033" Group="GeneralDateTimeLong" FormatString="G" /></DateTimes></Format>
+
+	column DueDate
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: ba025cb8-9c6a-409f-9757-0a7fbf74824f
+		summarizeBy: none
+		sourceColumn: DueDate
+
+		variation Variation
+			isDefault
+			relationship: 9971ff07-bb29-4c77-84df-d4b42f342075
+			defaultHierarchy: LocalDateTable_6a4732fc-676a-4d8c-8974-fa76cea0aaaf.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="DateTimeGeneralPattern"><DateTimes><DateTime LCID="1033" Group="GeneralDateTimeLong" FormatString="G" /></DateTimes></Format>
+
+	column ShipDate
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 6bd8ee78-4560-4c3c-a4e9-3fe22b168633
+		summarizeBy: none
+		sourceColumn: ShipDate
+
+		variation Variation
+			isDefault
+			relationship: e28f95d8-d2de-4a4c-b930-cb85aa57bdbc
+			defaultHierarchy: LocalDateTable_41066069-c630-42ba-8b0e-07b913c40f11.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="DateTimeGeneralPattern"><DateTimes><DateTime LCID="1033" Group="GeneralDateTimeLong" FormatString="G" /></DateTimes></Format>
+
+	partition FactInternetSales-f613faa2-2a9e-45ff-8455-8ff840c2c54c = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("jxkt4xphz2.database.windows.net", "AdventureWorksDW2016-Australia"),
+				    dbo_FactInternetSales = Source{[Schema="dbo",Item="FactInternetSales"]}[Data],
+				    #"Kept First Rows" = if #"Query Size Limit" = "none" then dbo_FactInternetSales else Table.FirstN(dbo_FactInternetSales,Number.FromText(#"Query Size Limit"))
+				in
+				    #"Kept First Rows"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_QueryRelationships = {"columnCount":26,"keyColumnNames":["SalesOrderNumber","SalesOrderLineNumber"],"queryRelationships":[{"keyColumnCount":1,"keyColumn":6,"otherKeyColumnIdentity":"Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/DimCurrency.{CurrencyKey,0}","KeyColumnCount":1},{"keyColumnCount":1,"keyColumn":4,"otherKeyColumnIdentity":"Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/DimCustomer.{CustomerKey,0}","KeyColumnCount":1},{"keyColumnCount":1,"keyColumn":2,"otherKeyColumnIdentity":"Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/DimDate.{DateKey,0}","KeyColumnCount":1},{"keyColumnCount":1,"keyColumn":1,"otherKeyColumnIdentity":"Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/DimDate.{DateKey,0}","KeyColumnCount":1},{"keyColumnCount":1,"keyColumn":3,"otherKeyColumnIdentity":"Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/DimDate.{DateKey,0}","KeyColumnCount":1},{"keyColumnCount":1,"keyColumn":0,"otherKeyColumnIdentity":"Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/DimProduct.{ProductKey,0}","KeyColumnCount":1},{"keyColumnCount":1,"keyColumn":5,"otherKeyColumnIdentity":"Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/DimPromotion.{PromotionKey,0}","KeyColumnCount":1},{"keyColumnCount":1,"keyColumn":7,"otherKeyColumnIdentity":"Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/DimSalesTerritory.{SalesTerritoryKey,0}","KeyColumnCount":1}],"columnIdentities":["Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{ProductKey,0}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{OrderDateKey,1}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{DueDateKey,2}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{ShipDateKey,3}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{CustomerKey,4}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{PromotionKey,5}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{CurrencyKey,6}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{SalesTerritoryKey,7}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{SalesOrderNumber,8}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{SalesOrderLineNumber,9}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{RevisionNumber,10}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{OrderQuantity,11}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{UnitPrice,12}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{ExtendedAmount,13}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{UnitPriceDiscountPct,14}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{DiscountAmount,15}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{ProductStandardCost,16}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{TotalProductCost,17}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{SalesAmount,18}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{TaxAmt,19}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{Freight,20}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{CarrierTrackingNumber,21}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{CustomerPONumber,22}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{OrderDate,23}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{DueDate,24}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{ShipDate,25}"],"ColumnCount":26,"KeyColumnNames":["SalesOrderNumber","SalesOrderLineNumber"],"ColumnIdentities":["Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{ProductKey,0}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{OrderDateKey,1}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{DueDateKey,2}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{ShipDateKey,3}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{CustomerKey,4}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{PromotionKey,5}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{CurrencyKey,6}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{SalesTerritoryKey,7}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{SalesOrderNumber,8}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{SalesOrderLineNumber,9}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{RevisionNumber,10}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{OrderQuantity,11}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{UnitPrice,12}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{ExtendedAmount,13}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{UnitPriceDiscountPct,14}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{DiscountAmount,15}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{ProductStandardCost,16}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{TotalProductCost,17}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{SalesAmount,18}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{TaxAmt,19}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{Freight,20}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{CarrierTrackingNumber,21}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{CustomerPONumber,22}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{OrderDate,23}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{DueDate,24}","Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/FactInternetSales.{ShipDate,25}"],"RelationshipInfo":[{"keyColumnCount":1,"keyColumn":6,"otherKeyColumnIdentity":"Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/DimCurrency.{CurrencyKey,0}","KeyColumnCount":1},{"keyColumnCount":1,"keyColumn":4,"otherKeyColumnIdentity":"Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/DimCustomer.{CustomerKey,0}","KeyColumnCount":1},{"keyColumnCount":1,"keyColumn":2,"otherKeyColumnIdentity":"Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/DimDate.{DateKey,0}","KeyColumnCount":1},{"keyColumnCount":1,"keyColumn":1,"otherKeyColumnIdentity":"Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/DimDate.{DateKey,0}","KeyColumnCount":1},{"keyColumnCount":1,"keyColumn":3,"otherKeyColumnIdentity":"Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/DimDate.{DateKey,0}","KeyColumnCount":1},{"keyColumnCount":1,"keyColumn":0,"otherKeyColumnIdentity":"Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/DimProduct.{ProductKey,0}","KeyColumnCount":1},{"keyColumnCount":1,"keyColumn":5,"otherKeyColumnIdentity":"Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/DimPromotion.{PromotionKey,0}","KeyColumnCount":1},{"keyColumnCount":1,"keyColumn":7,"otherKeyColumnIdentity":"Server.Database\\/2/SQL/jxkt4xphz2.database.windows.net;AdventureWorksDW2016-Australia/dbo/DimSalesTerritory.{SalesTerritoryKey,0}","KeyColumnCount":1}]}
+
+	annotation PBI_ResultType = Table
+
